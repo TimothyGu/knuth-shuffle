@@ -1,29 +1,26 @@
-/*jshint -W054 */
-(function (exports) {
-  'use strict';
+'use strict'
 
-  // http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
-  function shuffle(array) {
-    var currentIndex = array.length
-      , temporaryValue
-      , randomIndex
-      ;
+var randGen = require('seed-random')
 
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
+// http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+function shuffle(array, seed) {
+  var currentIndex = array.length
+    , temporaryValue
+    , randomIndex
+    , rand = randGen(seed || Math.random())
 
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(rand() * currentIndex --)
 
-      // And swap it with the current element.
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-
-    return array;
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex]
+    array[currentIndex] = array[randomIndex]
+    array[randomIndex] = temporaryValue
   }
 
-  exports.knuthShuffle = shuffle;
-}('undefined' !== typeof exports && exports || 'undefined' !== typeof window && window || global));
+  return array
+}
+
+module.exports = shuffle;

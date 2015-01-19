@@ -1,7 +1,7 @@
 {
-  "name": "knuth-shuffle",
-  "version": "1.0.1",
-  "description": "The Fisher-Yates (aka Knuth) shuffle for Browser and Node.js",
+  "name": "knuth-shuffle-seeded",
+  "version": "0.0.0",
+  "description": "The Fisher-Yates (aka Knuth) shuffle for Node.js, with seeding support",
   "main": "index.js",
   "scripts": {
     "test": "node example.js"
@@ -25,8 +25,14 @@
     "algorithm"
   ],
   "author": "AJ ONeal <coolaj86@gmail.com> (http://coolaj86.info/)",
+  "contributor": [
+    "Timothy Gu <timothygu99@gmail.com> (https://timothygu.github.io/)"
+  ],
   "license": "Apache2",
   "bugs": {
-    "url": "https://github.com/coolaj86/knuth-shuffle/issues"
+    "url": "https://github.com/TimothyGu/knuth-shuffle-seeded/issues"
+  },
+  "dependencies": {
+    "seed-random": "^2.2.0"
   }
 }
