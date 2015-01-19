@@ -1,6 +1,6 @@
 {
-  "name": "knuth-shuffle",
-  "version": "1.0.0",
+  "name": "knuth-shuffle-seeded",
+  "version": "0.0.1",
   "main": "index.js",
   "ignore": [
     ".jshintrc"
