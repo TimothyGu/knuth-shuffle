@@ -46,7 +46,9 @@ module.exports = function shuffle(array, seed) {
   var currentIndex
     , temporaryValue
     , randomIndex
-    , rand = randGen(seed || Math.random())
+    , rand
+  if (arguments.length < 2) rand = randGen()
+  else                      rand = randGen(seed)
 
   if (array.constructor !== Array) throw new Error('Input is not an array')
   currentIndex = array.length
@@ -54,7 +56,7 @@ module.exports = function shuffle(array, seed) {
   // While there remain elements to shuffle...
   while (0 !== currentIndex) {
     // Pick a remaining element...
-    randomIndex = Math.floor(rand() * currentIndex --)
+    randomIndex = Math.floor(rand() * (currentIndex --))
 
     // And swap it with the current element.
     temporaryValue = array[currentIndex]

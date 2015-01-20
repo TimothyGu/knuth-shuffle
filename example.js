@@ -18,7 +18,9 @@ var d = shuffle(a.slice(0), 2)
 console.log(d)
 
 // seed can be a string too:
-var e = shuffle(a.slice(0), 'string')
-console.log(c)
-var f = shuffle(a.slice(0), 'string')
-console.log(d)
+var e = shuffle(a.slice(0), 'str')
+console.log(e)
+var f = shuffle(a.slice(0), 'str')
+console.log(f)
+var g = shuffle(a.slice(0), '\ns\0t\rr\uD834')
+console.log(g)
