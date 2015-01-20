@@ -1,7 +1,7 @@
 knuth-shuffle-seeded
 ====================
 
-[![npm](https://img.shields.io/npm/v/npm.svg?style=flat)](https://www.npmjs.com/package/knuth-shuffle-seeded)
+[![npm](https://img.shields.io/npm/v/knuth-shuffle-seeded.svg?style=flat)](https://www.npmjs.com/package/knuth-shuffle-seeded)
 
 The Fisher-Yates (aka Knuth) shuffle for the browser and Node.js, with seeds
 support using [seed-random](https://www.npmjs.com/package/seed-random).
