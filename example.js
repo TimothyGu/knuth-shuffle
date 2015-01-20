@@ -1,3 +1,5 @@
+// Node.js demo
+
 'use strict'
 
 var shuffle = require('./')
@@ -13,4 +15,10 @@ console.log(b)
 var c = shuffle(a.slice(0), 2)
 console.log(c)
 var d = shuffle(a.slice(0), 2)
+console.log(d)
+
+// seed can be a string too:
+var e = shuffle(a.slice(0), 'string')
+console.log(c)
+var f = shuffle(a.slice(0), 'string')
 console.log(d)

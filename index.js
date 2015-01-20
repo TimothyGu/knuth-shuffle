@@ -43,10 +43,13 @@ var randGen = require('seed-random')
  * @return {Array} The resulting array.
  */
 module.exports = function shuffle(array, seed) {
-  var currentIndex = array.length
+  var currentIndex
     , temporaryValue
     , randomIndex
     , rand = randGen(seed || Math.random())
+
+  if (array.constructor !== Array) throw new Error('Input is not an array')
+  currentIndex = array.length
 
   // While there remain elements to shuffle...
   while (0 !== currentIndex) {

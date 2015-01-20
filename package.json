@@ -4,7 +4,8 @@
   "description": "The Fisher-Yates (aka Knuth) shuffle for Node.js, with seeding support",
   "main": "index.js",
   "scripts": {
-    "test": "node example.js"
+    "test": "node example.js",
+    "prepublish": "browserify -s shuffle -g uglifyify -o shuffle.js index.js"
   },
   "repository": {
     "type": "git",
@@ -24,15 +25,19 @@
     "unbiased",
     "algorithm"
   ],
-  "author": "AJ ONeal <coolaj86@gmail.com> (http://coolaj86.info/)",
+  "author": "AJ O'Neal <coolaj86@gmail.com> (http://coolaj86.info/)",
   "contributor": [
     "Timothy Gu <timothygu99@gmail.com> (https://timothygu.github.io/)"
   ],
-  "license": "Apache2",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/TimothyGu/knuth-shuffle-seeded/issues"
   },
   "dependencies": {
     "seed-random": "^2.2.0"
+  },
+  "devDependencies": {
+    "browserify": "^8.1.1",
+    "uglifyify": "^3.0.1"
   }
 }

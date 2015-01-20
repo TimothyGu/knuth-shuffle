@@ -9,6 +9,19 @@ This project is initially forked from [coolaj86/knuth-shuffle]
 possible to specify a seed to use in the shuffling, to ensure test
 reproducability.
 
+Getting Started
+---------------
+
+### Node.js
+
+    npm install knuth-shuffle-seeded
+
+Then look at example.js.
+
+### The Browser
+
+Put shuffle.js into your `js/`. Then look at example.html.
+
 Why not contribute to the original repo?
 ----------------------------------------
 
