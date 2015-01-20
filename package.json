@@ -1,6 +1,6 @@
 {
   "name": "knuth-shuffle-seeded",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The Fisher-Yates (aka Knuth) shuffle for Node.js, with seeding support",
   "main": "index.js",
   "scripts": {
