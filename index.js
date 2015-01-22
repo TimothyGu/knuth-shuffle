@@ -47,8 +47,8 @@ module.exports = function shuffle(array, seed) {
     , temporaryValue
     , randomIndex
     , rand
-  if (arguments.length < 2) rand = randGen()
-  else                      rand = randGen(seed)
+  if (seed == null) rand = randGen()
+  else              rand = randGen(seed)
 
   if (array.constructor !== Array) throw new Error('Input is not an array')
   currentIndex = array.length
