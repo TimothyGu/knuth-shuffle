@@ -11,6 +11,8 @@ This project is initially forked from [coolaj86/knuth-shuffle]
 possible to specify a seed to use in the shuffling, to ensure test
 reproducability.
 
+Demo: https://timothygu.github.io/knuth-shuffle-seeded/example.html
+
 Getting Started
 ---------------
 
