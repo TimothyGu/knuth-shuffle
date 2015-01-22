@@ -75,8 +75,8 @@
           return
         }
         // If seed is a number assume the user wants to use a number seed
-        if (seed != null && seed == String(+seed)) seed = +seed
-        console.log(seed)
+        if (seed === '')                seed = undefined
+        else if (seed == String(+seed)) seed = +seed
         out.textContent = JSON.stringify(shuffle(arr, seed))
       }
     </script>
