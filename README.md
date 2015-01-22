@@ -34,8 +34,8 @@ which is too far away from the simple approach of knuth-shuffle.
 Authors
 -------
 
-AJ O'Neal (@coolaj86) -- initial author
-Timothy Gu (@TimothyGu) -- seed-random support
+- AJ O'Neal (@coolaj86) -- initial author
+- Timothy Gu (@TimothyGu) -- seeding support
 
 License
 -------
