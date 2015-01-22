@@ -11,7 +11,7 @@ This project is initially forked from [coolaj86/knuth-shuffle]
 possible to specify a seed to use in the shuffling, to ensure test
 reproducability.
 
-Demo: https://timothygu.github.io/knuth-shuffle-seeded/example.html
+Demo: https://timothygu.github.io/knuth-shuffle-seeded/
 
 Getting Started
 ---------------
@@ -24,7 +24,9 @@ Then look at example.js.
 
 ### The Browser
 
-Put shuffle.js into your `js/`. Then look at example.html.
+Put shuffle.js into your `js/`. Then look at index.html.
+
+You can also visit the page at http://timothygu.github.io/knuth-shuffle-seeded/.
 
 Why not contribute to the original repo?
 ----------------------------------------
