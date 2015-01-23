@@ -1,6 +1,6 @@
 {
   "name": "knuth-shuffle-seeded",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The Fisher-Yates (aka Knuth) shuffle for Node.js, with seeding support",
   "main": "index.js",
   "scripts": {
@@ -33,9 +33,6 @@
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/TimothyGu/knuth-shuffle-seeded/issues"
-  },
-  "engines": {
-    "node": ">=0.10.0"
   },
   "dependencies": {
     "seed-random": "^2.2.0"
