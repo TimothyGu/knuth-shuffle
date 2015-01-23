@@ -1,6 +1,6 @@
 {
   "name": "knuth-shuffle-seeded",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "The Fisher-Yates (aka Knuth) shuffle for Node.js, with seeding support",
   "main": "index.js",
   "scripts": {
@@ -35,10 +35,10 @@
     "url": "https://github.com/TimothyGu/knuth-shuffle-seeded/issues"
   },
   "dependencies": {
-    "seed-random": "^2.2.0"
+    "seed-random": "~2.2.0"
   },
   "devDependencies": {
-    "browserify": "^8.1.1",
-    "uglifyify": "^3.0.1"
+    "browserify": "~8.1.1",
+    "uglifyify": "~3.0.1"
   }
 }
