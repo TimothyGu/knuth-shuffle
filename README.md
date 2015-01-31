@@ -1,7 +1,7 @@
 # knuth-shuffle-seeded
 
 [![npm](https://img.shields.io/npm/v/knuth-shuffle-seeded.svg?style=flat)](https://www.npmjs.com/package/knuth-shuffle-seeded)
-[![Dependencies](https://img.shields.io/david/TimothyGu/knuth-shuffle-seeded.svg?style=flat)](http://david-dm.org/TimothyGu/knuth-shuffle-seeded#info=dependencies)
+[![Dependencies](https://img.shields.io/david/TimothyGu/knuth-shuffle-seeded.svg?style=flat)](https://david-dm.org/TimothyGu/knuth-shuffle-seeded#info=dependencies)
 [![devDependencies](https://img.shields.io/david/dev/TimothyGu/knuth-shuffle-seeded.svg?style=flat)](https://david-dm.org/TimothyGu/knuth-shuffle-seeded#info=devDependencies)
 [![Code Coverage](https://img.shields.io/codecov/c/github/TimothyGu/knuth-shuffle-seeded.svg?style=flat)](https://codecov.io/github/TimothyGu/knuth-shuffle-seeded?branch=gh-pages)
 
@@ -31,7 +31,7 @@ Put browser.js into your directory for JavaScripts. Then take a look at
 index.html.
 
 You can also visit the page at
-http://timothygu.github.io/knuth-shuffle-seeded/.
+https://timothygu.github.io/knuth-shuffle-seeded/.
 
 ### API
 
