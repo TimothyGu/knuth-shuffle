@@ -1,50 +1,60 @@
-knuth-shuffle-seeded
-====================
+# knuth-shuffle-seeded
 
 [![npm](https://img.shields.io/npm/v/knuth-shuffle-seeded.svg?style=flat)](https://www.npmjs.com/package/knuth-shuffle-seeded)
+[![Dependencies](https://img.shields.io/david/TimothyGu/knuth-shuffle-seeded.svg?style=flat)](http://david-dm.org/TimothyGu/knuth-shuffle-seeded#info=dependencies)
+[![devDependencies](https://img.shields.io/david/dev/TimothyGu/knuth-shuffle-seeded.svg?style=flat)](https://david-dm.org/TimothyGu/knuth-shuffle-seeded#info=devDependencies)
 
 The Fisher-Yates (aka Knuth) shuffle for the browser and Node.js, with seeds
 support using [seed-random](https://www.npmjs.com/package/seed-random).
 
-This project is initially forked from [coolaj86/knuth-shuffle]
-(https://github.com/coolaj86/knuth-shuffle), but extended so that it is
-possible to specify a seed to use in the shuffling, to ensure test
-reproducability.
+This project is initially forked from
+[coolaj86/knuth-shuffle](https://github.com/coolaj86/knuth-shuffle), but is
+extended so that it is possible to specify a seed to use in the shuffling, to
+ensure test reproducability.
 
-Demo: https://timothygu.github.io/knuth-shuffle-seeded/
+Online demo: https://timothygu.github.io/knuth-shuffle-seeded/
 
-Getting Started
----------------
+## Getting Started
 
 ### Node.js
 
-    npm install knuth-shuffle-seeded
+Installing:
 
-Then look at example.js.
+```sh
+npm install knuth-shuffle-seeded
+```
 
 ### The Browser
 
-Put shuffle.js into your `js/`. Then look at index.html.
+Put browser.js into your directory for JavaScripts. Then take a look at
+index.html.
 
-You can also visit the page at http://timothygu.github.io/knuth-shuffle-seeded/.
+You can also visit the page at
+http://timothygu.github.io/knuth-shuffle-seeded/.
 
-Why not contribute to the original repo?
-----------------------------------------
+### API
+
+```js
+shuffle(inputArray[, seed])
+```
+
+See example.js for more examples.
+
+## Why not contribute to the original repo?
 
 I have considered that, but the introduction of an npm dependency makes it
 necessary to use Browserify to generate a browser-compatible JavaScript file,
 which is too far away from the simple approach of knuth-shuffle.
 
-Authors
--------
+## Authors
 
 - AJ O'Neal (@coolaj86) -- initial author
 - Timothy Gu (@TimothyGu) -- seeding support
 
-License
--------
+## License
 
 Copyright 2013 AJ O'Neal
+
 Copyright 2015 Tiancheng "Timothy" Gu
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not

@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Fisher-Yates Shuffle Demo">
+    <meta name="author" content="Timothy Gu">
 
     <title>Fisher-Yates Shuffle Demo</title>
 
@@ -58,26 +58,46 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="shuffle.js"></script>
+    <script src="browser.js"></script>
     <script>
       function shuffleInput (inputId, outputId, seedId) {
-        var arr = document.getElementById(inputId)
-          , out = document.getElementById(outputId)
-          , seed = document.getElementById(seedId).value
-        try {
+        var // Input array
+            arr = document.getElementById(inputId)
+          , // Output HTML element
+            out = document.getElementById(outputId)
+          , // User-specified seed
+            seed = document.getElementById(seedId).value
+          , // Output string
+            outStr
+
+        // Handle errors by catching it, print the message to the output HTML
+        // box, and throwing it again so that it's visible on the JS console.
+        function handleError(func) {
+          try {
+            func()
+          } catch (e) {
+            out.textContent = e.stack
+            throw e
+          }
+        }
+
+        // Parse input array.
+        handleError(function () {
           arr = JSON.parse(arr.value)
-        } catch (e) {
-          out.textContent = e.stack
-          return
-        }
-        if (arr.constructor !== Array) {
-          out.textContent = (new Error('input must be an array!')).stack
-          return
-        }
-        // If seed is a number assume the user wants to use a number seed
+        })
+
+        // If the seed is empty, assume the user does not want to use a seed.
         if (seed === '')                seed = undefined
+        // If seed is a number assume the user wants to use a numerical seed.
         else if (seed == String(+seed)) seed = +seed
-        out.textContent = JSON.stringify(shuffle(arr, seed))
+
+        handleError(function () {
+          // Shuffle the array with the seed, and stringifies it to outStr.
+          outStr = JSON.stringify(shuffle(arr, seed))
+        })
+
+        // Insert output string to the output HTML box.
+        out.textContent = outStr
       }
     </script>
   </body>
