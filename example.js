@@ -27,7 +27,7 @@ console.log(e, f)
 var g = shuffle(a.slice(0), '\ns\0t\rr\uD834')
 console.log(g)
 
-// It can even be an object or array:
+// It can even be an object or array, although it is not recommended to do so:
 var h = shuffle(a.slice(0), { obj: true })
 var i = shuffle(a.slice(0), new Date(0))
 var j = shuffle(a.slice(0), a)

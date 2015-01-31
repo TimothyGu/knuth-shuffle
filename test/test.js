@@ -55,24 +55,13 @@ describe('seeding with a number', function () {
 
 describe('seeding with a object', function () {
   var obj1 = { blah: 'ad', bla: 4 }
-    , obj2 = new Date(10000)
+    , obj2 = new Date()
     , a
     , b
-    , c
-    , d
 
   it('does not crash', function () {
     a = shuffle(test.slice(0), obj1)
-    b = shuffle(test.slice(0), obj1)
-    c = shuffle(test.slice(0), obj2)
-    d = shuffle(test.slice(0), obj2)
-  })
-
-  it('output is the same for the same seed', function () {
-    assert.deepEqual(a, b)
-    assert.deepEqual(c, d)
-    assert.deepEqual(a, [ 11, 'blah', 2 , 42, { heeeheee: true }, 'adsf', 37])
-    assert.deepEqual(c, [ 11, 2, 42, 'adsf', { heeeheee: true }, 37, 'blah' ])
+    b = shuffle(test.slice(0), obj2)
   })
 })
 
