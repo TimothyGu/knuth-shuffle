@@ -12,6 +12,5 @@ script:
 
 after_success: |
   if [ "$TRAVIS_NODE_VERSION" = '0.10' ]; then
-    npm run coveralls;
     npm run codecov;
   fi
