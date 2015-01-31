@@ -10,7 +10,7 @@ branches:
 script:
   - npm test
 
-on_success:
+after_success:
   - env
   - npm run coveralls
   - npm run codecov
